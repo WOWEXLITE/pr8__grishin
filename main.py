@@ -3,6 +3,8 @@ from random import choices
 
 symbols = 'ABCDEFGHJKLMNOPQRSUVWXYZ'
 symbolslow = 'abcdefghjklmnopqrstuvwxyz'
+digits = '0123456789'
+
 
 chars = ''
 
@@ -12,6 +14,7 @@ pwd_auto = (input('Сгенерировать пароль автоматиче�
 for text, seq in(
                  ('Включить верхний регистор', symbols ),
                  ('Включить нижний регистор', symbolslow ),
+                 ('Включить цифры', digits )
     if pwd_auto or(input(text + '  (y,n): ') == 'y'):
        chars += seq
 
